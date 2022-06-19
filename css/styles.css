@@ -205,15 +205,19 @@ color:var(--accent-color);
 
 .hero .container{
 
- margin-bottom: 94px;
+ margin-bottom: ;
 
 }
 
 .hero {
+    background-image: url(../images/icons&BG/Img-bg-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 200px;
-    padding-bottom: 210px;
+    padding-bottom: 200px;
     text-align: center;
-   background: #2F303A;
+   /* background: #2F303A; */
 }
 
     
