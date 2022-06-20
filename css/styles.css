@@ -11,6 +11,7 @@ html {
 
 
 :root {
+    --icon-silver--:#AFB1B8;
     --primary-text-color: #757575;
     --section-title-color: #212121;
     --accent-color: #2196F3;
@@ -64,6 +65,8 @@ body {
 
 }
 
+
+.join-title,
 .hero-title,
 .preferences-title {
     text-transform: uppercase;
@@ -170,11 +173,18 @@ ul {
 
 
 /* посилання у шапці  */
+
+.connection-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
 .site-link .link {
 color: var(--primary-text-color);
 }
 
-.site-link .link:hover,
+.connection-item .link:hover,
 .site-link .link:focus {
 color:var(--accent-color);
 } 
@@ -205,12 +215,12 @@ color:var(--accent-color);
 
 .hero .container{
 
- margin-bottom: ;
+ /* margin-bottom: ; */
 
 }
 
 .hero {
-    background-image: url(../images/icons&BG/Img-bg-hero.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons&BG/Img-bg-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -319,6 +329,18 @@ color:var(--accent-color);
         font-size: 14px;
         line-height: 1.71;
  }
+
+ .pref-img  {
+     width: 270px;
+     height: 120px;
+     padding: 25px 100px;
+    background: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+     
+ }
+
+
  /* перша секція закрито */
 
 
@@ -395,24 +417,113 @@ background: #F5F4FA;
 .position {
         font-size: 16px;
         line-height: 1.17px;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
         text-align: center;
 
 }
 
 /* наша команда end */
+
+
+
+/* ---------customers-------- */
+
+
+
+
+
+
+.customer {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.customer:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.customer-list {
+    
+    display: flex;
+    margin-bottom: 94px;
+}
+
+
+.customer:hover,
+.customer:focus
+ {
+    border: 1px solid var(--accent-color);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    color: var(--accent-color);
+    border: var(--accent-color);
+}
+
+.customer-link {
+    
+    align-items: center;
+    
+        justify-content: center;
+        display: flex;
+    color: var(--icon-silver--);
+}
+
+.customer-icon {
+   
+   
+    fill: currentColor;
+}
+
+
+
 /* main end */
 
 
 /* footer */
 
+.soc {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:var(--white-color);
+            background-color: rgba(255, 255, 255, 0.1);
+    
+        }
+ 
+        
+.soc:hover,
+.soc:focus {
+    background-color: var(--accent-color);
+}
+
+.soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+
 .footer-container {
+    width: 231px;
     padding-bottom: 60px;
     padding-top: 60px;
+    margin-left: 120px;
+    margin-right: 70px;
 }
 
 .footer {
     background: #2F303A;
+    display: flex;
 }
 
 .address {
@@ -439,9 +550,44 @@ background: #F5F4FA;
 .address-link .link,
 .address {
 font-size: 14px;
-
-
 }
+
+.soc-list {
+    display: flex;
+}
+
+.join-container {
+    margin-bottom: 100px;
+    margin-top: 72px;
+}
+
+
+.join-title {
+    font-weight: 700;
+    font-size: 14;
+    height: 1.14;
+    text-align: left;
+    margin-bottom: 20px;
+    
+    color: var(--white-color);
+     /* Font size: 14px;
+      Line height: 16px; 
+      Align: Left; */
+}
+
+
+
+
+
+/* ------постійні клієнти------- */
+
+
+.customer-title {
+    margin-top: 94px;
+}
+
+
+
 
 
 /* додатково для портфоліо */
@@ -509,6 +655,16 @@ font-size: 14px;
  }
 
 
+ .one-exampl:hover,
+ .one-exampl:focus {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    
+        box-shadow: 0px 4px 4px 0px #0000000F;
+    
+        box-shadow: 0px 1px 1px 0px #0000001F;
+ }
+
+
 .exampls .title {
     padding: 0 0 0 24px;
     font-weight: 700;
@@ -545,3 +701,48 @@ color: var(--white-color);
 .exampls .title {
 
 }
+
+
+
+/* ---------ICONS-------- */
+
+.master-soc {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-silver--);
+    
+
+}
+
+
+
+
+.co-worker-soc-icon {
+    fill: currentColor;
+}
+
+.master-soc:hover,
+.master-soc:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+
+
+.co-worker-soc-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+.co-worker-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+/* -------header icins-------- */
+
