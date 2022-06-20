@@ -106,18 +106,19 @@ ul {
 .container-header {
 
     display: flex;
-      border-bottom: 1px solid #ECECEC;
-    
+      
+    align-items: center;
 }
 
-.header {
+header {
     background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
 
 }
 
 .logo {
     margin-right: 93px;
-    padding-top:24px ;
+    
    
 
     font-family: 'Raleway', sans-serif;
@@ -179,6 +180,10 @@ ul {
     fill: currentColor;
 }
 
+.site-link {
+    margin-left: 285px;
+}
+
 
 .site-link .link {
 color: var(--primary-text-color);
@@ -189,14 +194,11 @@ color: var(--primary-text-color);
 color:var(--accent-color);
 } 
 
-.connection {
-    margin-left: auto;
-}
+
 
 /* спільне для усіх посилань шапки */
 .site-link,
 .site-nav {
-    font-family: 'Roboto';
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -404,11 +406,15 @@ background: #F5F4FA;
 
 }
 
+.co-worker-info {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.17;
-        margin-top: 30px;
         margin-bottom: 10px;
         text-align: center;
 
@@ -416,7 +422,7 @@ background: #F5F4FA;
 
 .position {
         font-size: 16px;
-        line-height: 1.17px;
+        line-height: 1.17;
         margin-bottom: 16px;
         text-align: center;
 
@@ -428,6 +434,15 @@ background: #F5F4FA;
 
 /* ---------customers-------- */
 
+.customer-title {
+    
+}
+
+.customers-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 
 
 
@@ -451,7 +466,7 @@ background: #F5F4FA;
 .customer-list {
     
     display: flex;
-    margin-bottom: 94px;
+    
 }
 
 
@@ -512,12 +527,16 @@ background: #F5F4FA;
 }
 
 
+.footer-containers {
+    display: flex;
+}
+
+
 
 .footer-container {
     width: 231px;
     padding-bottom: 60px;
     padding-top: 60px;
-    margin-left: 120px;
     margin-right: 70px;
 }
 
@@ -582,9 +601,7 @@ font-size: 14px;
 /* ------постійні клієнти------- */
 
 
-.customer-title {
-    margin-top: 94px;
-}
+
 
 
 
