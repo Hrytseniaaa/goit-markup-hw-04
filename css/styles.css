@@ -641,6 +641,7 @@ font-size: 14px;
  }
 
   .exampl-wrap {
+      border-top: 0;
       border: 1px solid #EEEEEE;
   }
 
