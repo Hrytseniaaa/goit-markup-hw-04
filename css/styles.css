@@ -157,6 +157,7 @@ header .logo {
 
 .site-nav .link {
     color: var(--section-title-color);
+            
 
 }
 
@@ -193,6 +194,8 @@ header .logo {
 
 .site-link .link {
 color: var(--primary-text-color);
+display: flex;
+    align-items: center;
 }
 
 .site-link .link:hover,
@@ -323,8 +326,11 @@ color: var(--primary-text-color);
  }
 
  .pref-img  {
+     display: flex;
+     align-items: center;
+     justify-content: center;
 
-     padding: 25px 100px;
+    height: 120px;
     background: #F5F4FA;
     margin-bottom: 30px;
     border-radius: 4px;
